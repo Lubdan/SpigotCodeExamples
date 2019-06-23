@@ -1,0 +1,4 @@
+#Version 1.0 by Lubdan
+Format: "&a Welcome back {NAME}!"
+Permission-Denied: "&cSorry, but you do not have permission to perform this command."
+NoLastPlayer: "&aThere is no one to welcome back!"

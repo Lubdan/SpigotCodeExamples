@@ -1,0 +1,12 @@
+name: CodeExamples
+version: 1.0
+main: lubdan.codeexamples.CodeExamples
+author: [Lubdan]
+commands:
+  WelcomeBack:
+    description: Welcome a player to the server.
+    aliases: #allows for multiple commands to all execute the same one
+      - wb
+      - welback
+      - welba
+
