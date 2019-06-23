@@ -23,8 +23,9 @@ public class WelcomeBack implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        if(sender instanceof Player){ // checks if a player is typing the command
+        if(sender instanceof Player && sender.hasPermission("welcomeback.use")){ // checks if a player is typing the command
             if(CE.lastplayer != null){ // ensures a player has joined
+
 
                 String format = ChatColor.translateAlternateColorCodes('&', CE.getConfig().getString("Format")).replace("{NAME}", CE.lastplayer);// Provides support for & color coding, then pulls the string from our config file. Once that is done, it replaces "{NAME} with the player's IGN who joined.
                 Player player = (Player) sender; // declares a player variable, because the CommandSender does not have a chat method.
